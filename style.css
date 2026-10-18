@@ -105,6 +105,17 @@ body:not(.about) {
     background-clip: text;
 }
 
+.sub-line {
+    display: block;
+    height: 1.1em;
+    line-height: 1.1em;
+    white-space: nowrap;
+    background: linear-gradient(180deg, #fff 0%, #bbb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .cycle-wrapper {
     display: block;
     height: 1.1em;
