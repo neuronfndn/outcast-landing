@@ -394,6 +394,10 @@ body.about {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.container p + .title {
+    margin-top: 32px;
+}
+
 .back-link {
     display: inline-flex;
     color: rgba(255, 255, 255, 0.8);
