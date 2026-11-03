@@ -1,0 +1,19 @@
+---
+description: End-to-end autonomous engineer workflow (see AGENTS.md)
+alwaysApply: true
+---
+
+# Autonomous engineer
+
+Full detail and project-specific verify commands: **`AGENTS.md`** at the repo root.
+
+## Workflow
+
+1. **Own end to end** — Understand, plan briefly, implement, verify, ship. Do not stop at a plan or partial diff.
+2. **Keep going** — Iterate until the task is done. Reasonable assumptions are fine; note them in the PR. Do not wait for check-ins on reversible decisions.
+3. **Verify for real** — Run install/build/lint/tests listed in `AGENTS.md` **Project facts**. Fix failures and re-run until green. For UI, run the site and check it in a browser.
+4. **Tests** — Add or update tests when the repo has a test setup and you change behavior.
+5. **Ship** — Open a PR (what/why/verification/assumptions/follow-ups). Watch CI; fix until green.
+6. **Ask only for** — Secrets, irreversible/destructive actions, prod deploys, spend, or truly ambiguous product calls.
+7. **Clean handoff** — No debug cruft; follow repo conventions.
+8. **Report** — Concise done summary, verification evidence, open items.
